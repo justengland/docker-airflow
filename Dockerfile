@@ -1,5 +1,6 @@
 # VERSION 1.10.12
 # AUTHOR: Matthieu "Puckel_" Roisil
+# UPGRADE BY David Wong
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t puckel/docker-airflow .
 # docker build --rm --build-arg AIRFLOW_DEPS="aws,devel" -t puckel/docker-airflow:1.10.12 .
