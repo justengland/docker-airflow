@@ -85,5 +85,7 @@ EXPOSE 8080 5555 8793
 
 USER airflow
 WORKDIR ${AIRFLOW_USER_HOME}
+COPY requirements.txt /
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["webserver"]

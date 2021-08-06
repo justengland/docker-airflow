@@ -1,0 +1,7 @@
+botocore
+boto3
+snowflake-connector-python
+apache-airflow[aws]
+apache-airflow[snowflake]
+pyyaml
+aws-requests-auth

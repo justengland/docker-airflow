@@ -26,6 +26,8 @@ export \
 # Install custom python package if requirements.txt is present
 if [ -e "/requirements.txt" ]; then
     $(command -v pip) install --user -r /requirements.txt
+else
+    echo 'no requirements.txt'
 fi
 
 wait_for_port() {
