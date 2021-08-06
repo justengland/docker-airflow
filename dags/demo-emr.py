@@ -76,6 +76,15 @@ def log_aws_identity():
 #     dag=dag,
 # )
 
+
+"""
+select * 
+from "DEV_MARKET_DB"."SEGMENTATION_MK"."MODEL_RUN"
+LIMIT 1
+"""
+
+
+
 waitForEmrToComplete = BigDataSensor(
     task_id='waitForEmrToComplete',
     data_source_name='test_calculate_pi',
